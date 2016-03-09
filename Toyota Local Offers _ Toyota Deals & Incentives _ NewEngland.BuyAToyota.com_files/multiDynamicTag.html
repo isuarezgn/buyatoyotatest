@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0121)http://ds.serving-sys.com/burstingres/cdprojects/customTags/multiDynamicTag.html?campaignID=204682&TID=3315&TVAL=nodealer -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Untitled</title>
+
+	
+</head>
+<body>
+	<script type="text/javascript">
+	//TID=3097&campaignID=1234&TVAL=1001
+	//parse query
+	function getQuerystring(key, default_)
+
+	{
+
+	if (default_==null) default_="null"; 
+
+	key = key.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+
+	var regex = new RegExp("[\\?&]"+key+"=([^&#]*)");
+
+	var qs = regex.exec(document.location);
+
+	if(qs == null)
+
+		return default_;
+
+	else
+
+		return qs[1];
+
+	}
+	
+	//set tags 
+	
+		// get ebCreativeState
+		var tag = 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=gs&campaignid=' + getQuerystring("campaignID");
+		writeTag(tag);
+		
+	
+		// add multi tag
+		var MultiTag = 'http://ds.serving-sys.com/burstingres/cdprojects/customTags/JS_multiDynamicTagV2.js?campaignid='+ getQuerystring("campaignID")+'&TID='+getQuerystring("TID")+'&TVAL='+getQuerystring("TVAL");
+		writeTag(MultiTag);//http://ds.serving-sys.com/burstingres/cdprojects/customTags/
+			
+	
+	//write tag
+	function writeTag(tag){
+		
+		var ord = Math.floor(Math.random() * 1000000);
+		var tagSrc = tag+'&ord=' + ord ; 
+		document.write("<scr"+"ipt src='"+tagSrc+ "'>");
+		document.write("</scr" + "ipt>");
+
+	}
+	
+	</script><script src="adServer(3).bs"></script><script src="JS_multiDynamicTagV2.js"></script><script src="ActivityServer(1).bs"></script><iframe src="adServer.html" width="0&quot;" height="0" frameborder="0"></iframe>
+
+
+</body></html>

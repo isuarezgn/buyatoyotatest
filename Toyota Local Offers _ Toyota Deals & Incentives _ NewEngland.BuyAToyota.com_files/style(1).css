@@ -1,0 +1,157 @@
+body, p, tr, td {
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	background-color: #CCCCCC;
+}
+
+table {
+	border-spacing:0;
+	border-collapse:collapse;
+}
+
+img{
+	display: block;
+}
+
+#modelYear, #modelTrim, #disclaimerLink, .offers{
+	font-family: 'Open Sans', sans-serif;	
+} 
+
+#ad {
+	display:block;
+	overflow:hidden;
+	width:1920px;
+	height:350px;
+	background-color:#FFF;
+	-moz-user-select:0;
+	-khtml-user-select:none;
+	-webkit-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+
+#banner {
+	position:relative;
+	width:1920px;
+	height:350px;
+	/*background:url(images/bg.jpg) center center no-repeat;*/
+	overflow:hidden;
+	text-align:center;
+	display:none;
+}
+#badgeHolder{
+	
+}
+#badge{
+	display: inline-block;
+}
+#badgeImage{
+
+}
+#modelYear,#modelTrim {
+	font-style: italic;
+	font-size: 16pt;
+	font-weight:700;
+	padding:0 2px;
+	color:#fff;
+}
+#modelTrim{
+float: right;
+margin-top: -3px;
+}
+#disclaimerLink {
+	font-size:10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	cursor:pointer;
+	text-decoration:underline;
+	font-style: italic;
+	color: #fff;
+	display:none;
+	position: relative;
+	z-index:2;
+}
+#table{
+    position: relative;
+    height: 100%;
+    left: 892px;
+    top: -4%;
+}
+#disclaimer {
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	font-size:12px;
+	color:#000;
+	cursor:pointer;
+	background-color:#fff;
+	opacity:0.8;
+	position:absolute;
+	width:1920px;
+	height:342px;
+	overflow-y:auto;
+	transition-duration:.5s;
+	z-index:3;
+}
+
+#disclaimer p {
+  float: right;
+    margin-right: 127px;
+    padding: 76px 327px 76px 76px;
+    pointer-events: none;
+    text-align: left;
+    width: 48%;
+}
+
+#loader{
+	position:absolute; 
+	top:167px; 
+	left:742px;
+}
+
+#seriesImage {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:#FFF;
+}
+
+#clickthroughButton {
+	position:absolute;
+	z-index: 1;
+	width:100%;
+	height:100%;
+	cursor:pointer;
+}
+
+.disclaimerShow {
+	top:8px;
+	left:0px;
+}
+
+.disclaimerHide {
+	top:350px;
+	left:0px;
+}
+
+#CTA{
+	cursor: pointer;
+	z-index: 2;
+	position: relative;
+}
+
+.offers {
+	display:none;
+	margin:auto;
+	color: #fff;
+	font-style: italic;
+	font-weight: 600;
+}
+#Custom{
+	margin:12px 0px;
+}
+
